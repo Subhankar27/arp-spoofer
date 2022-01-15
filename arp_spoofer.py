@@ -38,6 +38,8 @@ try:
   time.sleep(2)
   count = count + 2
   print("\r[+] Packets sent: " + str(count), end="") 
+  
+  
 
 except KeyboardInterrupt:
  print("[+] Detected ctrl+c ... Resetting ARP table ... ")
